@@ -1,0 +1,173 @@
+@media screen and (max-width:576px) {
+
+
+    /* banner responsive */
+    .nav-links{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .banner{
+        width: 90%;
+        margin: 0 auto 45px;
+        margin-bottom: 0;
+        padding-bottom: 0px;
+    }
+    .nav-text{
+        font-size: 2.5rem;
+    }
+    .banner-content{
+        flex-direction: column;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .banner-text{
+        width: 100%;    
+    }
+    
+    .banner-tittle{
+        font-size: 3.75em;        
+    }
+    .banner-description{
+        font-size: 1.75rem;
+    }
+    .btn-1, .btn-2{
+        width: 45%;
+        padding: 15px;
+        border-radius: 25px;
+        font-size: 1rem;
+    }
+
+    .banner-image{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        height: 550px;
+        overflow:hidden ;        
+    }    
+    .banner-image>img{
+        width: 90%;
+        
+    }
+    .tutorial-card{   
+        bottom: 150px;
+        left: 40px;
+    }
+    .tutorial-card-2{   
+        top: 50px;
+        right: 0;
+    }
+
+
+    /* main width responsive 
+    */
+    .main-width{
+        width: 90%;
+    }
+
+
+
+    /* habit section responsive */
+
+    .habit{
+        margin: 0;
+    }
+
+    .section-text{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .image-card-holder{
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-card{
+        width: 80%;
+        margin: 20px 0; 
+    }
+
+
+    /* running section responsive */
+
+    .running{
+        flex-direction: column;
+        padding: 20px 20px 40px 20px;
+        gap: 30px;
+
+    }
+    .running-text{
+        width: 90%;
+
+    }
+    .running-text>.btn-1{
+        width:90%;
+        margin-right: 0;
+    }
+    .running-image{
+        width: 90%;
+        overflow: hidden;
+        height: 170px;
+        border-radius: 20px;
+    }
+    .running-image>img{
+        width: 140%;
+        margin: -20px 0 0 -100px;
+    }
+    
+
+    /* bmi section responsive  */
+    .bmi-container{
+        flex-direction: column;
+    }
+    .chart,.calculator{
+        width: 100%;
+    }
+    .calculator-tittle{
+        margin:20px 0;
+    }
+    .grid-input .btn-1{
+        width: 60%;
+    }
+
+
+
+    /* team section responsive */
+    .team-text{
+        width: 100%;
+    }
+    .box-holder{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 95% ;
+        height: 270px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        margin: 15px 0;
+    }
+
+    /* footer section responsive */
+    .foot-container{
+        width: 90%;
+    }
+    .info-container{
+        flex-direction: column;
+    }
+    .info-one, .info{
+        width: 90%;
+    }
+    .info-tittle{
+        font-size: 4rem;
+    }
+    .info-description{
+        margin-bottom: 30px;
+    }
+    .foot-footer{
+        text-align: start;
+    }
+
+}

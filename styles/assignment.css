@@ -1,0 +1,408 @@
+
+/* shared style  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    color:gray;
+}
+h1,h2,h3{
+    color: white;
+}
+header{
+    background: linear-gradient(rgba(92, 92, 92, 0.471),rgba(24, 24, 24, 0.233));
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.btn-1{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color:  rgb(238, 95, 43);
+    color: white;
+    width: 35% ;
+    margin-right: 25px;
+}
+.btn-2{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 35% ;
+}
+
+.section-tittle{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.section-description{
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.main-width{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* banner section style  */
+
+/* navbar */
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 45px;
+
+}
+.nav-text{
+    color: rgb(238, 95, 43);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    border: 0.5px solid rgba(100, 100, 100, 0.536);
+    border-radius: 50px;
+    padding: 8px 4px;
+}
+.nav-link>a {
+    text-decoration: none;
+    padding:6px 15px ;
+    border-radius: 50px;
+    color: white;    
+}
+#home{
+    background-color: rgb(238, 95, 43);
+}
+
+.hamburger{
+    display: none;
+}
+/* texarea */
+.banner-content{
+    display: flex;
+    margin: 45px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-text{
+    width: 50%;    
+}
+.banner-tittle{
+    color: white;
+    font-size: 4em;
+    margin: 20px 0;
+}
+.banner-description{
+    font-size: 1rem;
+    color: gainsboro;
+    margin: 20px 0;
+
+}
+.banner-image{
+    width: 50%;
+    text-align: right;
+    position: relative;
+}
+
+.banner-image img{
+    width: 65%;
+}
+.tutorial-card{
+    display: flex;
+    position: absolute;
+    padding: 15px;
+    background-color: rgba(110, 110, 110, 0.176);   
+    bottom: 50px;
+    left: 50px;
+    align-items: center;
+    width: 33%;
+    border-radius: 10px;
+}
+.tutorial-card-2{
+    position: absolute;
+    padding: 15px;
+    background-color: rgba(122, 122, 122, 0.176);    
+    top: 75px;
+    right: -60px;
+    align-items: center;
+    width: 33%;
+    border-radius: 10px;
+}
+.tutorial-card-circle{
+    width: 10px;
+    height: 10px;
+    padding: 7%;
+    border-radius: 50%;
+    margin: 5%;
+    background-color: orangered;
+}
+.tutorial-card-text{
+    text-align: left;
+    margin-left: 5px;
+}
+.tutorial-card-tittle{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.tutorial-card-tittle-2{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.tutorial-card-description{
+    color: gray;
+    font-size: 1rem;
+}
+
+/* habit section style  */
+.habit{
+    margin: 50px 0;
+}
+.section-text{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.image-card-holder{
+    display: flex;
+    gap: 3%;
+    justify-content:space-between;
+}
+.image-card{
+    width: 22%;
+    text-align: center;
+    margin: 30px 0;
+}
+.image-holder{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 4px solid rgba(128, 128, 128, 0.391);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+
+}
+.image-holder>img{
+    width:100%;
+}
+.card-tittle{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+
+/* running section style  */
+.running{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    align-items: center;
+    background-color: rgba(122, 122, 122, 0.176);  
+    padding: 20px 20px 20px 30px;
+    border-radius: 30px;
+}
+.running-text{
+    width: 45%;
+}
+.running-image{
+    width: 35%;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 20px;
+}
+.running-image>img{
+    width: 280%;
+    margin-left: -400px;
+    margin-top: -100px;
+}
+
+
+/* bmi section style  */
+.bmi{
+    background-color: rgba(119, 119, 119, 0.173);
+}
+.bmi-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    margin: 50px 0;
+}
+.chart{
+    width: 30%;
+}
+.calculator{
+    width: 55%;
+}
+.chart-tittle{
+    margin-bottom: 20px;
+}
+.calculator-tittle{
+    margin:0 0 20px 0;
+}
+.calculator-description{
+    margin-bottom: 20px;
+}
+.grid-input .btn-1{
+    margin-top: 20px;
+    width: 40%;
+    padding: 10px;
+}
+td,th{
+    color: gray;
+    border: 1px solid gray;
+    text-align: left;
+    padding: 10px;
+}
+th{
+    color: white ;
+}
+table{
+    border-collapse: collapse;
+}
+
+.input-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.select-item, .input-item{
+    padding: 10px;    
+    background-color: rgba(132, 132, 132, 0.256);
+    border-radius: 5px;
+    border: none;
+    color: gainsboro;
+}
+.input-item::placeholder{
+    color: gainsboro;
+}
+option{
+    color: gainsboro;
+    background-color: rgba(83, 83, 83, 0.665);
+}
+
+#last-item{
+    grid-column: 2 span;
+}
+
+
+
+/* team section style  */
+.team-text{
+    width: 65%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.box-holder{
+    background-color: rgba(122, 122, 122, 0.176);  
+    border-radius: 20px;
+    padding:8px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.box{
+    width: 32% ;
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin: 8px 0;
+}
+.box>img{
+    width: 100% ;
+    position: absolute;
+    z-index: 0;
+}
+#image-four{
+    width: 150% ;
+    margin-left: -100px;
+}
+.img-overlay{
+    width: 100% ;
+    background-color: rgb(196, 196, 196);
+    position: absolute;
+    z-index: 1;
+    padding: 100%;
+    mix-blend-mode: multiply;
+}
+.box-text{
+    bottom: 15px;
+    left: 15px;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* footer section style  */
+
+footer{
+    background-color: rgba(122, 122, 122, 0.176); 
+    margin-top: 60px; 
+}
+.foot-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.info-container{
+display: flex;
+justify-content: space-between;
+margin-bottom: 50px;
+}
+
+.info-one{
+    width:40% ;
+}
+.info{
+    width: 20%;
+}
+.info-tittle{
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: rgb(207, 72, 14);
+}
+.info-description{
+    font-size: 1rem;
+}
+.info-head{
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.info-point{
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+    color: gray;
+    margin: 10px 0;
+}
+.foot-footer{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+
