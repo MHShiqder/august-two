@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face{
+    font-family: miama;
+    src: url(../fonts/miama.regular.ttf);
+}
+
 
 /* shared style  */
 *{
@@ -5,13 +18,15 @@
     padding: 0px;
 }
 p{
-    color:gray;
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
 }
 h1,h2,h3{
     color: white;
 }
 header{
-    background: linear-gradient(rgba(92, 92, 92, 0.471),rgba(24, 24, 24, 0.233));
+    
+    background: linear-gradient(to bottom, #000000, rgba(104, 104, 104, 0.234),rgba(104, 104, 104, 0.384),rgba(104, 104, 104, 0.236), #000000);
 }
 body{
     background-color: rgb(0, 0, 0);
@@ -20,10 +35,11 @@ body{
     padding: 10px;
     border-radius: 20px;
     border: none;
-    background-color:  rgb(238, 95, 43);
+    background-color:  rgba(230, 83, 60, 1);
     color: white;
-    width: 35% ;
+    width: 40% ;
     margin-right: 25px;
+    font-size: 1rem;
 }
 .btn-2{
     padding: 10px;
@@ -31,16 +47,17 @@ body{
     border: 1px solid white;
     background-color: transparent;
     color: white;
-    width: 35% ;
+    width: 40% ;
+    font-size: 1rem;
 }
 
 .section-tittle{
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2.6rem;
+    font-weight: 900;
     margin: 20px 0;
 }
 .section-description{
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 20px 0;
 }
 
@@ -61,8 +78,8 @@ body{
 
 }
 .nav-text{
-    color: rgb(238, 95, 43);
-    font-size: 2rem;
+    color: rgba(230, 83, 60, 1);
+    font-size: 2.25rem;
     font-weight: bold;
 }
 .nav-items{
@@ -74,7 +91,7 @@ body{
     display: flex;
     list-style: none;
     gap: 20px;
-    border: 0.5px solid rgba(100, 100, 100, 0.536);
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     padding: 8px 4px;
 }
@@ -85,13 +102,13 @@ body{
     color: white;    
 }
 #home{
-    background-color: rgb(238, 95, 43);
+    background-color: rgba(230, 83, 60, 1);
 }
 
 .hamburger{
     display: none;
 }
-/* texarea */
+/* textarea */
 .banner-content{
     display: flex;
     margin: 45px 0px;
@@ -105,10 +122,18 @@ body{
     color: white;
     font-size: 4em;
     margin: 20px 0;
+    font-weight: 900;
+    line-height: 75px;
+}
+.miama-font{
+    font-family: miama;
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 80px;
 }
 .banner-description{
-    font-size: 1rem;
-    color: gainsboro;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
     margin: 20px 0;
 
 }
@@ -125,22 +150,24 @@ body{
     display: flex;
     position: absolute;
     padding: 15px;
-    background-color: rgba(110, 110, 110, 0.176);   
+    background-color: rgba(48, 48, 48, 0.54);   
     bottom: 50px;
     left: 50px;
     align-items: center;
     width: 33%;
     border-radius: 10px;
+    backdrop-filter: blur(5px);
 }
 .tutorial-card-2{
     position: absolute;
     padding: 15px;
-    background-color: rgba(122, 122, 122, 0.176);    
+    background-color: rgba(255, 255, 255, 0.1);    
     top: 75px;
     right: -60px;
     align-items: center;
     width: 33%;
     border-radius: 10px;
+    backdrop-filter: blur(5px);
 }
 .tutorial-card-circle{
     width: 10px;
@@ -148,27 +175,31 @@ body{
     padding: 7%;
     border-radius: 50%;
     margin: 5%;
-    background-color: orangered;
+    background-color: rgba(230, 83, 60, 1);
 }
 .tutorial-card-text{
     text-align: left;
     margin-left: 5px;
 }
 .tutorial-card-tittle{
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
+    color: rgba(250, 250, 249, 1);
+    font-size: 1.33rem;
+    font-weight: 900;
     margin-bottom: 5px;
 }
 .tutorial-card-tittle-2{
     color: white;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.2rem;
+    font-weight: 900;
     margin-bottom: 5px;
 }
 .tutorial-card-description{
-    color: gray;
-    font-size: 1rem;
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 0.9rem;
+}
+.tutorial-card-description-2{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.9rem;
 }
 
 /* habit section style  */
@@ -177,7 +208,7 @@ body{
 }
 .section-text{
     text-align: center;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 .image-card-holder{
@@ -194,7 +225,7 @@ body{
     width: 150px;
     height: 150px;
     overflow: hidden;
-    border: 4px solid rgba(128, 128, 128, 0.391);
+    border: 4px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     margin: 0 auto 15px;
 
@@ -203,7 +234,7 @@ body{
     width:100%;
 }
 .card-tittle{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin: 10px auto;
 }
@@ -215,11 +246,17 @@ body{
     justify-content: space-between;
     margin: 50px 0;
     align-items: center;
-    background-color: rgba(122, 122, 122, 0.176);  
+    background-color: rgba(34, 34, 34, 1);  
     padding: 20px 20px 20px 30px;
     border-radius: 30px;
 }
+.section-modified{
+    font-size: 2.9rem;
+}
 .running-text{
+    width: 45%;
+}
+.btn-width{
     width: 45%;
 }
 .running-image{
@@ -237,7 +274,11 @@ body{
 
 /* bmi section style  */
 .bmi{
-    background-color: rgba(119, 119, 119, 0.173);
+    background-color: rgba(34, 34, 34, 1);
+}
+.section-align{
+    text-align: start;
+    width: 50%;
 }
 .bmi-container{
     display: flex;
@@ -250,6 +291,7 @@ body{
 }
 .calculator{
     width: 55%;
+    overflow: hidden;
 }
 .chart-tittle{
     margin-bottom: 20px;
@@ -266,13 +308,15 @@ body{
     padding: 10px;
 }
 td,th{
-    color: gray;
-    border: 1px solid gray;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     text-align: left;
     padding: 10px;
+    font-size: 0.8rem;
 }
 th{
     color: white ;
+    font-size: 0.9rem;
 }
 table{
     border-collapse: collapse;
@@ -280,40 +324,44 @@ table{
 
 .input-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr, 1fr;
     gap: 10px;
 }
-.select-item, .input-item{
-    padding: 10px;    
-    background-color: rgba(132, 132, 132, 0.256);
-    border-radius: 5px;
-    border: none;
-    color: gainsboro;
-}
-.input-item::placeholder{
-    color: gainsboro;
-}
-option{
-    color: gainsboro;
-    background-color: rgba(83, 83, 83, 0.665);
-}
-
 #last-item{
     grid-column: 2 span;
 }
+.select-item, .input-item{
+    padding: 10px;    
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.select-item{
+    border-right: 12px solid transparent;
+}
+.input-item::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+option{
+    color: rgba(255, 255, 255, 0.758);
+    background-color: rgb(29, 28, 28);
+}
+
+
 
 
 
 /* team section style  */
 .team-text{
     width: 65%;
-    margin: 20px auto;
+    margin: 30px auto 50px;
     text-align: center;
 }
 
 .box-holder{
-    background-color: rgba(122, 122, 122, 0.176);  
-    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);  
+    border-radius: 16px;
     padding:8px 15px;
     display: flex;
     flex-wrap: wrap;
@@ -323,7 +371,7 @@ option{
 .box{
     width: 32% ;
     height: 220px;
-    border-radius: 15px;
+    border-radius: 16px;
     overflow: hidden;
     position: relative;
     margin: 8px 0;
@@ -339,7 +387,7 @@ option{
 }
 .img-overlay{
     width: 100% ;
-    background-color: rgb(196, 196, 196);
+    background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     z-index: 1;
     padding: 100%;
@@ -351,12 +399,15 @@ option{
     position: absolute;
     z-index: 2;
 }
+.box-text>h3{
+    font-size: 1rem;
+}
 
 
 /* footer section style  */
 
 footer{
-    background-color: rgba(122, 122, 122, 0.176); 
+    background-color: rgba(255, 255, 255, 0.1); 
     margin-top: 60px; 
 }
 .foot-container{
@@ -371,35 +422,41 @@ margin-bottom: 50px;
 }
 
 .info-one{
-    width:40% ;
+    width:42% ;
 }
 .info{
     width: 20%;
 }
 .info-tittle{
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 800;
     margin-top: 20px;
     margin-bottom: 25px;
-    color: rgb(207, 72, 14);
+    color: rgba(230, 83, 60, 1);
 }
 .info-description{
-    font-size: 1rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 .info-head{
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 .info-point{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-decoration: none;
     display: block;
-    color: gray;
+    color: rgba(255, 255, 255, 0.5);
     margin: 10px 0;
 }
 .foot-footer{
     text-align: center;
     margin-top: 30px;
+    font-size: 1rem;
+}
+hr{
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 

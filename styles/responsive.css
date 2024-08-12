@@ -8,6 +8,9 @@
     .hamburger{
         display: block;
     }
+    .hamburger>img{
+        width: 30px;
+    }
     .banner{
         width: 90%;
         margin: 0 auto 45px;
@@ -118,6 +121,10 @@
     
 
     /* bmi section responsive  */
+    .section-align{
+        text-align: start;
+        width: 90%;
+    }
     .bmi-container{
         flex-direction: column;
     }
